@@ -332,24 +332,16 @@ a {
 
 .delete__btn {
   display: inline-block;
-  margin-top: 20px;
   padding: 0.4em 1.6em;
   font-size: 0.8em;
   color: #fff;
   text-decoration: none;
   user-select: none;
-  background: #a1c3cc;
+  background-color: #a1c3cc;
   border: 1px #a1c3cc solid;
   border-radius: 3px;
-  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 2px 0 rgba(0, 0, 0, 0.12);
-  transition: 0.2s ease;
+  transition: 0.4s ease;
 }
-
-.delete__btn:hover {
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
-  cursor: pointer;
-}
-
 
 .edit__delete p {
   padding-top: 5px;
