@@ -40,8 +40,8 @@
     <div class='edit__delete'>
       <% if user_signed_in? && current_user.id == @post.user_id %>
         <p>この投稿を</p>
-        <div class='edit__btn'>
-          編集する
+        <div class='edit__delete__btn'>
+          <%= link_to '編集する', edit_post_path, class: :edit__btn %>
         </div>
         <p>または</p>
         <div class='delete__btn'>
