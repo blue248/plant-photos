@@ -1,0 +1,59 @@
+<div class='form-main'>
+  <div class='form-wrapper'>
+    <h1>会員登録</h1>
+    
+    <div class='form-wrapper__inner'>
+      <%= form_with model: @user, url: user_registration_path, local: true do |f| %>
+
+        <div class='field'>
+          <div class='field_label'>
+            <%= f.label :nickname, 'ニックネーム' %>
+          </div>
+          <div class='field_input'>
+            <%= f.text_field :nickname, id:'user_nickname' %>
+          </div>
+        </div>
+
+        <div class='field'>
+          <div class='field_label'>
+            <%= f.label :email, 'メールアドレス' %>
+          </div>
+          <div class='field_input'>
+            <%= f.email_field :email, id:'user_email', autofocus: true, autocomplete: 'email' %>
+          </div>
+        </div>
+
+        <div class='field'>
+          <div class='field_label'>
+            <%= f.label :password, 'パスワード（6文字以上）' %>
+          </div>
+          <div class='field_input'>
+            <%= f.password_field :password, id:'user_password', autocomplete: 'new-password' %>
+          </div>
+        </div>
+
+        <div class='field'>
+          <div class='field_label'>
+            <%= f.label :password_confirmation, 'パスワード再入力' %>
+          </div>
+          <div class='field_input'>
+            <%= f.password_field :password_confirmation, id:'user_password_confirmation', autocomplete: 'new-password' %>
+          </div>
+        </div>
+
+        <div class='field'>
+          <div class='field_label'>
+            <%= f.label :profile, 'プロフィール' %>
+          </div>
+          <div class='field_input'>
+            <%= f.text_area :profile, class: :form__text, id:'user_profile' %>
+          </div>
+        </div>
+
+        <div class='actions'>
+          <%= f.submit '新規登録', class: :form__btn %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

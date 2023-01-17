@@ -72,3 +72,80 @@ a {
   background: #6b9963;
 }
 
+
+/* 会員登録ページ、ログインページ、投稿ページ、編集ページ */
+.form-main {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.form-wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 800px;
+  height: 800px;
+  position: relative;
+}
+
+.form-wrapper h1 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.form-wrapper__inner {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 500px;
+  height: 600px;
+  padding-top: 20px;
+}
+
+.field {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.field_input input {
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  border: #6b9963 solid 1px;
+}
+
+.field_input textarea {
+  width: 100%;
+  height: 65px;
+  padding: 10px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  border: #6b9963 solid 1px;
+}
+
+.form__btn{
+  display: inline-block;
+  width: 100%;
+  margin-top: 20px;
+  padding: 0.4em 1.6em;
+  font-size: 0.8em;
+  color: #fff;
+  text-decoration: none;
+  user-select: none;
+  background: #6b9963;
+  border: 1px #6b9963 solid;
+  border-radius: 3px;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 2px 0 rgba(0, 0, 0, 0.12);
+  transition: 0.2s ease;
+}
+
+.form__btn:hover {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
