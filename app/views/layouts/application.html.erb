@@ -10,6 +10,24 @@
   </head>
 
   <body>
+    <header class='header'>
+      <div class='inner'>
+        <div class='nav'>
+          <div class='nav-left'>
+            <%= link_to image_tag("logo.png", class: :logo), root_path %>
+          </div>
+
+          <div class='nav-right'>
+
+              <div class='nav__right'>
+                <%= link_to 'ログイン', '#', class: :nav__btn %>
+                <%= link_to '会員登録', '#', class: :nav__btn %>
+              </div>
+
+          </div>
+        </div>
+      </div>
+    </header>
     <%= yield %>
   </body>
 </html>
