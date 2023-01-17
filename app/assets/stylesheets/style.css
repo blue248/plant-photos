@@ -56,7 +56,7 @@ a {
   width: 200px;
 }
 
-.nav__btn{
+.nav__btn {
   display: inline-block;
   padding: 0.4em 1.6em;
   font-size: 0.8em;
@@ -67,7 +67,26 @@ a {
   border-radius: 3px;
   transition: 0.4s ease;
 }
-.nav__btn:hover{
+
+.nav__btn:hover {
+  color: #fff;
+  background: #6b9963;
+}
+
+.nav__logout {
+  display: inline-block;
+  padding: 0.4em 1.6em;
+  font-size: 0.8em;
+  color: #6b9963;
+  text-decoration: none;
+  user-select: none;
+  border: 1px #6b9963 solid;
+  border-radius: 3px;
+  transition: 0.4s ease;
+}
+
+.nav__logout:hover {
+  opacity: 0.5;
   color: #fff;
   background: #6b9963;
 }
