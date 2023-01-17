@@ -168,3 +168,70 @@ a {
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
   cursor: pointer;
 }
+
+
+/* トップページ */
+.main {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 1200px;
+}
+
+.greeting{
+  margin-bottom: 40px;
+}
+
+.greeting__link{
+  text-decoration: underline;
+}
+
+.card__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.card {
+  margin: 15px;
+
+}
+
+.card__top {
+  padding: 5px;
+  border: #6b9963 solid 1px;
+}
+
+.card__img {
+  width: 255px;
+  height: 255px;
+  object-fit: cover;
+}
+
+.card__bottom {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  padding: 0 20px;
+  line-height: 30px;
+  border-left: #6b9963 solid 1px;
+  border-right: #6b9963 solid 1px;
+  border-bottom: #6b9963 solid 1px;
+}
+
+.card__bottom__left {
+  width: 50%;
+  border-right: #6b9963 solid 1px;
+}
+
+.card__bottom__right {
+  width: 50%;
+  text-align: right;
+}

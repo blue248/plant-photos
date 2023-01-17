@@ -1,0 +1,31 @@
+<%= form_with(model: @post, local: true) do |f|%>
+
+  <div class='field'>
+    <div class='field_label'>
+      <%= f.label :image, '写真' %>
+    </div>
+    <%= f.file_field :image, id:'form_image' %>
+  </div>
+
+  <div class='field'>
+    <div class='field_label'>
+      <%= f.label :content, 'テキスト' %>
+    </div>
+    <div class='field_input'>
+      <%= f.text_area :content, class: :form__text, id:'form_text' %>
+    </div>
+  </div>
+
+  <div class='field'>
+    <div class='field_label'>
+      <%= f.label :hoge, 'タグ(,で区切ると複数タグ登録できます)' %>
+    </div>
+    <div class='field_input'>
+      <%= f.text_field :hoge, class: :form__text, id:'form_tag' %>
+    </div>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "保存する", class: :form__btn  %>
+  </div>
+<% end %>
