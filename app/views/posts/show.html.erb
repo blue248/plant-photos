@@ -1,0 +1,54 @@
+<div class='post__main'>
+  <div class='post__wrapper__left'>
+    <div class='post__image'>
+      <%= image_tag @post.image, class: :post__img %>
+    </div>
+
+    <div class='post__content'>
+      <div class='post__content__top'>
+        <div class='user__icon'>
+          <%= image_tag('icon1.png', class: :small_icon) %>
+        </div>
+        <div class='post__user__nickname'>
+          <%= link_to @post.user.nickname, "/users/#{@post.user.id}", class: :greeting__link %>
+        </div>
+        <div class='post__date'>
+          <%= @post.created_at.strftime('%Y/%m/%d') %>
+        </div>
+      </div>
+      <div class='post__content__bottom'>
+        <%= @post.content %>
+      </div>
+    </div>
+
+  </div>
+
+  <div class='post__wrapper__right'>
+    <div class='post__user__box'>
+      <div class='post__user__box__top'>
+        <div class='user__icon'>
+          <%= image_tag('icon1.png', class: :small_icon) %>
+        </div>
+        <div class='post__user__nickname'>
+          <%= link_to @post.user.nickname, "/users/#{@post.user.id}", class: :greeting__link %>
+        </div>
+      </div>
+      <div class='post__user__profile'>
+        <%= @post.user.profile %>
+      </div>
+    </div>
+    <div class='edit__delete'>
+      <% if user_signed_in? && current_user.id == @post.user_id %>
+        <p>この投稿を</p>
+        <div class='edit__btn'>
+          編集する
+        </div>
+        <p>または</p>
+        <div class='delete__btn'>
+          削除する
+        </div>
+      <% end %>
+    </div>
+
+  </div>
+</div>
