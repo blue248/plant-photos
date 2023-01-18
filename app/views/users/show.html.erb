@@ -1,0 +1,26 @@
+<div class='main'>
+  <div class='wrapper'>
+    <div class='user__header'>
+      <div class='user__header__left'>
+        <%= image_tag('icon1.png', class: :big_icon) %>
+      </div>
+      <div class='user__header__center'>
+        <div class='user__header__nickname'>
+          <%= @user.nickname %>
+        </div>
+        <div class='user__header__profile'>
+          <%= @user.profile %>
+        </div>
+      </div>
+      <div class='user__header__right'>
+        <% if user_signed_in? && current_user.id %>
+          <%= link_to '編集する', '#', class: :edit__btn %>
+        <% end %>
+      </div>
+    </div>
+
+    <div class='card__wrapper'>
+      <%= render partial: 'posts/post', collection: @user.posts %>
+    </div>
+  </div>
+</div>
