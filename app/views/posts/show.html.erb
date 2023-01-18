@@ -21,6 +21,40 @@
       </div>
     </div>
 
+    <div class='post__comments'>
+      <div class='comment__field'>
+        <% if user_signed_in? %>
+          <%= form_with(model: [@post, @comment], local: true) do |f| %>
+            <%= f.text_area :content, class: :form__comment, id:'form_comment' %>
+            <div class="actions">
+              <%= f.submit "送信する", class: :comment__btn  %>
+            </div>
+          <% end %>
+        <% end %>
+      </div>
+
+      <ul class='comments_lists'>
+        <% @comments.each do |comment| %>
+          <li class='comments_list'>
+            <div class='comment__header'>
+              <div class='user__icon'>
+                <%= image_tag('icon1.png', class: :small_icon) %>
+              </div>
+              <div class='comment__user__nickname'>
+                <%= link_to comment.user.nickname, '/users/#{comment.user.id}', class: :comment_user %>
+              </div>
+              <div class='comment__date'>
+                <%= comment.created_at.strftime('%Y/%m/%d') %>
+              </div>
+            </div>
+            <div class='comment__content'>
+              <%= comment.content %>
+            </div>
+          </li>
+        <% end %>
+      </ul>
+
+    </div>
   </div>
 
   <div class='post__wrapper__right'>
