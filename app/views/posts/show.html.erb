@@ -21,6 +21,19 @@
       </div>
     </div>
 
+    <div class='post__comments'>
+      <div class='comment__field'>
+        <% if user_signed_in? %>
+          <%= form_with(model: [@post, @comment], local: true) do |f| %>
+            <%= f.text_area :content, class: :form__comment, id:'form_comment' %>
+            <div class="actions">
+              <%= f.submit "送信する", class: :comment__btn  %>
+            </div>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+
   </div>
 
   <div class='post__wrapper__right'>
