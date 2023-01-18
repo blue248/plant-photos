@@ -348,12 +348,6 @@ a {
   font-size: 14px;
 }
 
-/* ユーザーアイコン */
-.small_icon {
-  width: 50px;
-  height: 50px;
-  margin-right: 20px;
-}
 
 /* コメント */
 .post__comments {
@@ -410,4 +404,44 @@ a {
 .comment_user {
   text-decoration: underline;
   letter-spacing: 1px;
+}
+
+/* ユーザーページ */
+.user__header {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+  background-color: #f3f3f2;
+}
+
+.user__header__left {
+  margin-left: 100px;
+}
+
+.user__header__center {
+  width: 750px;
+  padding: 30px;
+}
+
+.user__header__nickname {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.user__header__right {
+  display: flex;
+  align-items: flex-end;
+}
+
+/* ユーザーアイコン */
+.small_icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.big_icon {
+  width: 150px;
+  height: 150px;
+  margin-right: 50px;
 }

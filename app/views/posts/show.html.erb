@@ -41,7 +41,7 @@
                 <%= image_tag('icon1.png', class: :small_icon) %>
               </div>
               <div class='comment__user__nickname'>
-                <%= link_to comment.user.nickname, '/users/#{comment.user.id}', class: :comment_user %>
+                <%= link_to comment.user.nickname, "/users/#{comment.user.id}", class: :comment_user %>
               </div>
               <div class='comment__date'>
                 <%= comment.created_at.strftime('%Y/%m/%d') %>
@@ -53,7 +53,6 @@
           </li>
         <% end %>
       </ul>
-
     </div>
   </div>
 
