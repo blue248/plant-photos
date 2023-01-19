@@ -13,7 +13,7 @@
         </div>
       </div>
       <div class='user__header__right'>
-        <% if user_signed_in? && current_user.id %>
+        <% if user_signed_in? == current_user.id %>
           <%= link_to '編集する', '#', class: :edit__btn %>
         <% end %>
       </div>
