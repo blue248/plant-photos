@@ -70,6 +70,14 @@
         <%= @post.user.profile %>
       </div>
     </div>
+
+    <div class='tags'>
+      <p>この投稿のタグ</p><br>
+      <div class='tag_box'>
+        <%= @post.tags.first&.tag_name %>
+      </div>
+    </div>
+
     <div class='edit__delete'>
       <% if user_signed_in? && current_user.id == @post.user_id %>
         <p>この投稿を</p>

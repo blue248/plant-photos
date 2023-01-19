@@ -310,6 +310,20 @@ a {
   letter-spacing: 1px;
 }
 
+.tags {
+  margin-top: 40px;
+  padding-left: 40px;
+}
+
+.tag_box {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #e597b2;
+  color: #ffffff;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
 .edit__delete {
   margin-top: auto;
   display:flex;
