@@ -310,6 +310,33 @@ a {
   letter-spacing: 1px;
 }
 
+.tags {
+  margin-top: 40px;
+  padding-left: 40px;
+}
+
+.tag_box {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #e597b2;
+  color: #ffffff;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+/* タグ候補欄 */
+#search-result {
+  width: 30%;
+}
+
+.child{
+  margin: 5px;
+  border: 1px solid #dedede;
+  background-color: #F4F4F4;
+  padding: 5px;
+  font-size: 12px;
+}
+
 .edit__delete {
   margin-top: auto;
   display:flex;

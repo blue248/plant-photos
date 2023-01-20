@@ -3,7 +3,7 @@
     <h1>新規投稿</h1>
     
     <div class='form-wrapper__inner'>
-      <%= render partial: "form", locals: { post: @post } %>
+      <%= render partial: 'form', locals: {url: posts_path, method: :post} %>
     </div>
   </div>
 </div>
