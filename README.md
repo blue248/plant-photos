@@ -47,25 +47,13 @@ https://docs.google.com/spreadsheets/d/1ErDRbUVKyaH3UIW6Qj0V-47f43B5BRJ1oHsZnkhe
 
 [![Image from Gyazo](https://i.gyazo.com/4a9d468730f6bfb117e07d29778e5980.gif)](https://gyazo.com/4a9d468730f6bfb117e07d29778e5980)
 
-- ログアウト
-
-[![Image from Gyazo](https://i.gyazo.com/ed9432e5b96a53114da6a956d737cab2.gif)](https://gyazo.com/ed9432e5b96a53114da6a956d737cab2)
-
 - 投稿と一覧表示
 
 [![Image from Gyazo](https://i.gyazo.com/bf449a734d4158e479eecfeaf261f153.gif)](https://gyazo.com/bf449a734d4158e479eecfeaf261f153)
 
-- 投稿内容の詳細表示
-
-[![Image from Gyazo](https://i.gyazo.com/daa6c429c36d1cbb1b279c308e94044b.gif)](https://gyazo.com/daa6c429c36d1cbb1b279c308e94044b)
-
 - 投稿内容の編集
 
 [![Image from Gyazo](https://i.gyazo.com/293367709b60e3eddd48f27d3fcb2cbb.gif)](https://gyazo.com/293367709b60e3eddd48f27d3fcb2cbb)
-
-- 投稿に対するコメント投稿と一覧表示
-
-[![Image from Gyazo](https://i.gyazo.com/4a65b2fae8bde6a533c952c271b112b0.gif)](https://gyazo.com/4a65b2fae8bde6a533c952c271b112b0)
 
 - ユーザーページ
 
