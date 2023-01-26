@@ -14,7 +14,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // input要素で値の変化が起きた際に呼び出される関数
   fileField.addEventListener('change', function(e) {
-    console.log("input要素で値の変化が起きました");
+    // 古いプレビューが存在する場合は削除（画像選択し直し対応）
+    const alreadyPreview = document.querySelector('.preview');
+    if (alreadyPreview) {
+      alreadyPreview.remove();
+    };
+    // input要素で画像情報を取得・格納
     console.log(e.target.files[0]);
     const file = e.target.files[0];
     // 取得した画像のURLを生成
