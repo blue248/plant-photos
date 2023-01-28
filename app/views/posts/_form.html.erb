@@ -1,5 +1,11 @@
 <%= form_with model: @post_form,  url: url, method: method, id: 'new_post', local: true do |f| %>
 
+  <%# エラー発生時のメッセージ表示 %>
+    <div class='error_messages'>
+      <%= render 'shared/error_messages', model: f.object %>
+    </div>
+  <%# エラー発生時のメッセージ表示 %>
+
   <div class='field'>
     <div class='field_label'>
       <%= f.label :image, '写真' %>
