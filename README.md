@@ -59,11 +59,14 @@ https://docs.google.com/spreadsheets/d/1ErDRbUVKyaH3UIW6Qj0V-47f43B5BRJ1oHsZnkhe
 
 [![Image from Gyazo](https://i.gyazo.com/9104a2390c691e1fb003826acafab4b4.gif)](https://gyazo.com/9104a2390c691e1fb003826acafab4b4)
 
+- ユーザー情報編集
+
+[![Image from Gyazo](https://i.gyazo.com/2582a2260134012045b45a59253e688f.gif)](https://gyazo.com/2582a2260134012045b45a59253e688f)
 
 # 実装予定の機能
 
-- タグをクリックすると、同じタグが付いている投稿画像を一覧で見られるようにする。
 - いいね機能を実装し、自分がいいねした投稿を一覧で見られるようにする。
+- 検索欄を設けて、投稿を検索できるようにする。
 - ユーザーアイコンを設定できるようにする。
 
 # データベース設計
