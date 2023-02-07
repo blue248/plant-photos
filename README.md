@@ -37,6 +37,7 @@ https://plant-photos.onrender.com/
 
 https://docs.google.com/spreadsheets/d/1ErDRbUVKyaH3UIW6Qj0V-47f43B5BRJ1oHsZnkhey9U/edit#gid=982722306
 
+***
 # 実装した機能についての画像やGIFおよびその説明
 
 - 会員登録
